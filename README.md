@@ -1,24 +1,3 @@
-# README
+To run, cd into the project and run bundle install, rake db:create, rake db:migrate.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Make sure to configure with Okta.  You can put your okta values into the corresponding places in views/sessions/new.  If set up correctly users should be able to log in with okta credentials and use the oauth claims to create a user in active record as well as a Rails session.  
